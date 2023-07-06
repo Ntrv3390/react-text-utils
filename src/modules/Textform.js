@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import PropTypes from 'prop-types'
+import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 
 export const Textform = (props) => {
     const handleUpperCase = () => {
@@ -16,10 +16,10 @@ export const Textform = (props) => {
     const [text, setText] = useState('Enter text to get started');
   return (
     <div className="container mt-3">
-        <h1>{props.heading}</h1>
+        <h2>{props.heading}</h2>
         <textarea className="form-control" value={text} rows={18} onChange={handleChange}></textarea>
         <span>
-            <button className="btn btn-danger mt-2" onClick={handleUpperCase}>Convert to uppercase</button>
+            <button className="btn btn-danger mt-2" onClick={handleUpperCase}>Convert to UPPERCASE</button>
             <button className="btn btn-warning mt-2 mx-2" onClick={handleLowerCase}>Convert to lowercase</button>
         </span>
     </div>

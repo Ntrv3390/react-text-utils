@@ -17,7 +17,7 @@ export const Textform = (props) => {
   return (
     <div className="container mt-3">
         <h1>{props.heading}</h1>
-        <textarea className="form-control" value={text} rows={12} onChange={handleChange}></textarea>
+        <textarea className="form-control" value={text} rows={18} onChange={handleChange}></textarea>
         <span>
             <button className="btn btn-danger mt-2" onClick={handleUpperCase}>Convert to uppercase</button>
             <button className="btn btn-warning mt-2 mx-2" onClick={handleLowerCase}>Convert to lowercase</button>

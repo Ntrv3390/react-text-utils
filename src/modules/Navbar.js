@@ -26,6 +26,11 @@ export const Navbar = (props) => {
 </nav>
   ) 
 }
+
+Navbar.defaultProps = {
+  title : "Enter title here",
+}
+
 Navbar.propTypes = {
     title: PropTypes.string
   };

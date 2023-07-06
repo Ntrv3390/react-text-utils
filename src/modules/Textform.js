@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import PropTypes from 'prop-types'
 
 export const Textform = (props) => {
     const handleUpperCase = () => {
@@ -21,7 +22,14 @@ export const Textform = (props) => {
             <button className="btn btn-danger mt-2" onClick={handleUpperCase}>Convert to uppercase</button>
             <button className="btn btn-warning mt-2 mx-2" onClick={handleLowerCase}>Convert to lowercase</button>
         </span>
-        
     </div>
   )
+}
+
+Textform.defaultProps = {
+    heading : "Enter heading here",
+}
+
+Textform.propTypes = {
+    heading : PropTypes.string
 }

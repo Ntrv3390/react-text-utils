@@ -43,13 +43,13 @@ export const Textform = (props) => {
         <h2>{props.heading}</h2>
         <textarea className="form-control" value={text} rows={11} onChange={handleChange}></textarea>
         <span>
-            <button className="btn btn-danger mt-2" onClick={handleUpperCase}>Convert to UPPERCASE</button>
-            <button className="btn btn-warning mt-2 mx-2" onClick={handleLowerCase}>Convert to lowercase</button>
-            <button className="btn btn-primary mt-2 mx-2" onClick={handleCapitalize}>Capitalize</button>
-            <button className="btn btn-success mt-2 mx-2" onClick={handleCopyClipboard}>Copy to clipboard</button>
-            <button className="btn btn-danger mt-2 mx-2" onClick={handleSpace}>Remove extra space</button>
-            <button className="btn btn-warning mt-2 mx-2" onClick={handleSpeech}>Text to speech</button>
-            <button className="btn btn-success mt-2 mx-2" onClick={handleClear}>Clear</button>
+            <button className="btn btn-danger mt-2 my-1" onClick={handleUpperCase}>Convert to UPPERCASE</button>
+            <button className="btn btn-warning mt-2 mx-2 my-1" onClick={handleLowerCase}>Convert to lowercase</button>
+            <button className="btn btn-primary mt-2 mx-2 my-1" onClick={handleCapitalize}>Capitalize</button>
+            <button className="btn btn-success mt-2 mx-2 my-1" onClick={handleCopyClipboard}>Copy to clipboard</button>
+            <button className="btn btn-danger mt-2 mx-2 my-1" onClick={handleSpace}>Remove extra space</button>
+            <button className="btn btn-warning mt-2 mx-2 my-1" onClick={handleSpeech}>Text to speech</button>
+            <button className="btn btn-success mt-2 mx-2 my-1" onClick={handleClear}>Clear</button>
         </span>
     </div>
     <div className="container mt-3">

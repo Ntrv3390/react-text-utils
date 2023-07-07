@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 export const Footer = (props) => {
     const copyrightStyle = {
         backgroundColor: 'rgba(0,0,0,0.05)',
+        color:'#fff'
     }
   return (
-<footer className="mt-4 text-center text-lg-start bg-light text-muted">
+<footer className="mt-4 text-center text-lg-start bg-dark text-muted">
   <div className="text-center p-4" style={copyrightStyle}>
     Made by {props.name}
   </div>

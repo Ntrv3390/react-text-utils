@@ -2,12 +2,20 @@ import './App.css';
 import { Navbar } from './modules/Navbar';
 import { Textform } from './modules/Textform';
 import { Footer } from './modules/Footer';
+import {BrowserRouter as Router, 
+  Routes, 
+  Route
+} from 'react-router-dom';
 
 function App() {
   return (
     <>
       <Navbar title="Text Utils"/>
-      <Textform heading="Enter a text to operate"/>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Textform heading="Enter the text to operate!"/>}></Route>
+        </Routes>
+      </Router>
       <Footer name="Mohammed Puthawala"/>
     </>  
   );
